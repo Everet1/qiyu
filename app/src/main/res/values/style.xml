@@ -3,4 +3,12 @@
     <style name="App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
         <item name="boxBackgroundColor">@color/white</item>
     </style>
+
+    <style name="Theme.Qiyu.NoBar">
+        <item name="android:windowBackground">@mipmap/firstpaper</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
 </resources>

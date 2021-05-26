@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +16,7 @@ import com.everett.qiyu.R
 import com.everett.qiyu.activity.RegisterActivity
 import com.everett.qiyu.bean.JsonData
 import com.everett.qiyu.constant.Constant
+import com.everett.qiyu.constant.LogUtil
 import com.everett.qiyu.fragment.FragmentInterface
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
@@ -133,7 +133,7 @@ class RegisterFragment : Fragment() ,View.OnClickListener{
             }
 
             override fun onError(e: Throwable?) {
-                Log.e("Error", e.toString())
+                LogUtil.e("Error", e.toString())
             }
 
         }

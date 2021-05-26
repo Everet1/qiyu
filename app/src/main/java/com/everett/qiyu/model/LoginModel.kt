@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.everett.qiyu.bean.JsonData
 import com.everett.qiyu.constant.Constant
+import com.everett.qiyu.constant.LogUtil
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -32,7 +33,7 @@ class LoginModel : ViewModel() {
                 }
 
                 override fun onFailure(call: Call<JsonData>, t: Throwable) {
-                    Log.e(tAg, t.toString())
+                    LogUtil.e(tAg, t.toString())
                 }
 
             })
